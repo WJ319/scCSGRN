@@ -96,13 +96,13 @@ data_preprocess/scCSGRN_data/{dataset}/{cell_type}/celltype_grnboost2_GRN/Top500
 The current local copy keeps runnable raw and processed files for:
 
 ```text
-Mtab-11821 / Monocytes
+Mtab-11821 / B_cells
 ```
 
 Only the following cell type currently has complete local data:
 
 ```text
-Monocytes
+B_cells
 ```
 
 Other dataset or cell-type directories may still exist, but their `ExpressionData.csv`, `GeneOrdering.csv`, or processed files may have been removed. To run preprocessing or training for other datasets/cell types, restore the corresponding raw and processed data first and update the dataset/cell-type lists in the scripts.
@@ -122,7 +122,7 @@ Important: the current local copy keeps complete raw expression files only for `
 dataset_names = ['Mtab-11821']
 ```
 
-and keep only `Monocytes` in the `Mtab-11821` cell-type list.
+and keep only `B_cells` in the `Mtab-11821` cell-type list.
 
 The preprocessing script generates model-ready `.npy` and `.csv` files under:
 
@@ -151,7 +151,7 @@ iteration = 5
 For the current local data, the training script should run:
 
 ```text
-Monocytes
+B_cells
 ```
 
 ## Output
@@ -165,7 +165,7 @@ scCSGRN/scCSGRN_GRN/
 A typical output path is:
 
 ```text
-scCSGRN/scCSGRN_GRN/Mtab-11821/Monocytes/celltype_grnboost2_GRN/Top500/scCSGRN_GRN.csv
+scCSGRN/scCSGRN_GRN/Mtab-11821/B_cells/celltype_grnboost2_GRN/Top500/scCSGRN_GRN.csv
 ```
 
 Each result file records metrics from repeated independent tests, including:
